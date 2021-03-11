@@ -1,0 +1,21 @@
+version: "3"
+services:
+   cloud9:
+    image: your_docker-image/ide-c9:ruby_on_rails_6.0.2
+    container_name: devops_ide_ruby
+    environment:
+      - PUID=${CURRENT_UID}
+      - PGID=${CURRENT_GID}
+      - USERNAME=${USERNAME}
+      - HOSTNAME=cloud9-Ruby-2.7-Dev
+      - TZ=America/Fortaleza
+      - LANG=pt_BR.UTF-8
+      #- USERNAME=devops                                  #optional
+      #- PASSWORD=devops                                  #optional
+    volumes:
+     - ${USER}/Dev-Docker:/code
+     - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 8000:8000
+      - 3000:3000
+    restart: unless-stopped
