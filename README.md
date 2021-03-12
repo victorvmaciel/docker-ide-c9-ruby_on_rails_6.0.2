@@ -43,6 +43,10 @@ O container ficará disponível em seu navegador na porta 8000:
 
 ![idec9-home](https://user-images.githubusercontent.com/22057957/110880424-5f0c3f00-82bd-11eb-8ee9-533f4fb6ded1.jpeg)
 
+----
+
+# Hands on
+
 Para utilizar o terminal da do cloud9 clicar no botão "+" e selecionar New Terminal, ou simplesmente digitar o atalho "Alt + T" do seu teclado.
 
 Clonar o projeto que deseja e especificar a branch de desenvolvimento utilizando o git clone, entrar na pasta do projeto e fazer git checkout.
